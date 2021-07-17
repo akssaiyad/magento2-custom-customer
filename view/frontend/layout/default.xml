@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category  Aks Customers
+ * @package   Aks_Customers
+ * @copyright Copyright (c) 2021
+ * @author    Saiyad Asif <akssaiyad@gmail.com>
+ */
+ -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="header.links">
+            <block class="Aks\Customers\Block\HeaderLink" ifconfig="customerstab/general/enable" name="customers-header-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Customers SignUp</argument>
+                    <argument name="path" xsi:type="string">customers</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+        <referenceBlock name="footer_links">
+            <block class="Aks\Customers\Block\FooterLink" ifconfig="customerstab/general/enable" name="customers-footer-link" after="privacy-policy-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Customers SignUp</argument>
+                    <argument name="path" xsi:type="string">customers</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

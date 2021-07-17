@@ -1,0 +1,32 @@
+<?php
+/**
+ * @category  Aks Customers
+ * @package   Aks_Customers
+ * @copyright Copyright (c) 2021
+ * @author    Saiyad Asif <akssaiyad@gmail.com>
+ */
+
+namespace Aks\Customers\Block\Adminhtml\Data\Edit;
+
+use Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface;
+
+class SaveAndContinueButton extends GenericButton implements ButtonProviderInterface
+{
+
+    /**
+     * @return array
+     */
+    public function getButtonData()
+    {
+        return [
+            'label' => __('Save and Continue Edit'),
+            'class' => 'save',
+            'data_attribute' => [
+                'mage-init' => [
+                    'button' => ['event' => 'saveAndContinueEdit'],
+                ],
+            ],
+            'sort_order' => 80,
+        ];
+    }
+}

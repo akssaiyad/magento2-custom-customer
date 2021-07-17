@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category  Aks Customers
+ * @package   Aks_Customers
+ * @copyright Copyright (c) 2021
+ * @author    Saiyad Asif <akssaiyad@gmail.com>
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <customerstab>
+            <general>
+                <enable>1</enable>
+                <footerlink>1</footerlink>
+                <headerlink>1</headerlink>
+            </general>
+        </customerstab>
+    </default>
+</config>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category  Aks Customers
+ * @package   Aks_Customers
+ * @copyright Copyright (c) 2021
+ * @author    Saiyad Asif <akssaiyad@gmail.com>
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+    	<add id="Aks_Customers::top_level_aks" module="Aks_Customers" resource="Aks_Customers::Customers" sortOrder="69" title="AKS" parent="Magento_Customer::customer"/>
+
+        <add id="Aks_Customers::customers_data" title="Custom
+        Customers" module="Aks_Customers" sortOrder="10" parent="Aks_Customers::top_level_aks" action="customers/data/index" resource="Aks_Customers::Customers"/>
+
+        <add id="Aks_Customers::customers_configuration" title="Configuration" module="Aks_Customers" sortOrder="30" parent="Aks_Customers::top_level_aks" action="adminhtml/system_config/edit/section/customerstab/" resource="Aks_Customers::Customers"/>
+    </menu>
+</config>

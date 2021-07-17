@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * @category  Aks Customers
+ * @package   Aks_Customers
+ * @copyright Copyright (c) 2021
+ * @author    Saiyad Asif <akssaiyad@gmail.com>
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+            <resource id="Magento_Backend::admin">
+				<resource id="Aks_Customers::Customers" title="Aks Custom Customers" translate="title" sortOrder="10">
+                </resource>
+            </resource>
+        </resources>
+	</acl>
+</config>

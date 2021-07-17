@@ -1,0 +1,60 @@
+<!--
+/**
+ * @category  Aks Customers
+ * @package   Aks_Customers
+ * @copyright Copyright (c) 2021
+ * @author    Saiyad Asif <akssaiyad@gmail.com>
+ */
+ -->
+<?php //$isEnable = $block->getConfig('customerstab/general/enable') ?>
+<?php //if ($isEnable) : ?>
+    <form method="POST" action="<?php echo $this->getUrl('signup/index/post'); ?>" data-hasrequired="<?php echo __('* Required Fields') ?>" data-mage-init='{"validation":{}}'> 
+
+        <fieldset class="fieldset">
+            <div class="aks-customer-form">  
+                <div class="field name required">
+                    <label class="label" for="name"><span><?php echo __('Customer Name') ?></span></label>
+                    <div class="control">
+                        <input name="name" id="name" title="<?php echo __('Customer Name') ?>" value="" class="input-text" placeholder="Enter Name" type="text" data-validate="{required:true}"/>
+                    </div>
+                </div>
+
+                <div class="field dob required">
+                    <label class="label" for="dob"><span><?php echo __('Data Of Birth') ?></span></label>
+                    <div class="control customer-dob">
+                        <input type="text" 
+                               class="input-text required-entry hasDatepicker" 
+                               id="calendar_inputField" 
+                               name="dob"
+                               placeholder="Select Date"
+                               title="<?php echo __('Data Of Birth') ?>"
+                               aria-required="true" autocomplete=”off”/>
+                        
+                    </div>
+                </div>
+
+                <div class="actions-toolbar">
+        	        <div class="primary">
+        	            <button type="submit" title="<?php echo __('Submit') ?>" class="action submit primary">
+        	                <span><?php echo __('Submit') ?></span>
+        	            </button>
+        	        </div>
+            	</div>
+            </div>
+        </fieldset>    	
+
+    </form>
+<?php //endif; ?>
+<script>
+    require([
+        "jquery",
+        "mage/calendar"
+    ], function ($) {
+        $("#calendar_inputField").calendar({
+            changeYear: true,
+            changeMonth: true,
+            yearRange: "1970:2050",
+            buttonText: "Select Date",
+        });
+    });
+</script>
