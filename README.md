@@ -14,4 +14,4 @@ How to see the results
 
 Go to the backend
 
-In the Magento Admin Panel, you navigate to the Catalog → CustomCatalog
+In the Magento Admin Panel, you navigate to the Customers → AKS Custom Customers
