@@ -2,7 +2,7 @@ How to install this extension?
 
 Under your root folder, run the following command lines:
 
-composer require akssaiyad/magento2-custom-customer
+composer require aks/customers
 
 php bin/magento setup:upgrade 
 
